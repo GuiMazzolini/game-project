@@ -1,3 +1,7 @@
+@font-face { font-family: 'mario'; src:  url('SuperMario256.ttf')}
+@font-face { font-family: numbers; src: url('CursedTimerULiL.ttf');
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -6,4 +10,149 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+
+
+.clock {
+    width: 200px;
+    margin-top: 30px;
+    border: 1px solid white;
+    color: white;
+    margin-right: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.countdown, .lives {
+    font-family: numbers;
+     font-size: 30px;
+     display: block;
+     padding-bottom: 20px; 
+     align-items: center; 
+     
+    }
+
+h4 {
+    margin: 0 30px 0 0;
+    font-size: 40px;
+    font-family: 'mario';
+    color:white;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img {
+    padding-top: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-top: -50%;
+    box-shadow: 0 1px;
+}
+
+.pop-up {
+    width: 400px;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    text-align: center;
+    left: 45%;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    border: 2px solid black;
+}
+
+.pop-up h2 {
+    font-size: 38px;
+    font-family: 'mario';
+    color: red;
+}
+
+.pop-up button {
+    width: 100px;
+    padding: 10px 0;
+    background-color: #6FD649;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.change-popup {
+    visibility: visible;
+}
+
+#final-popup h2 {
+    color: blue;
+}
+
+
+.start {
+    position: absolute;
+    background-color: white;
+    width: 800px;
+    color: black;
+    align-items: center;
+    left: 35%;
+    height: 500px;
+    
+}
+
+.start-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.start-container img {
+    width: 300px;
+    height: 300px;
+
+}
+
+.start-container p {
+    width: 350px;
+    font-size: 20px;
+}
+
+.start h2 {
+    padding-top: 20px;
+    padding-left: 150px;
+    font-family: 'mario';
+    font-size: 30px;
+    
+}
+
+.start-visibility {
+    visibility: hidden;
+}
+
+.start button {
+    margin-left: 90px;
+    width: 100px;
+    padding: 10px 0;
+    background-color: #6FD649;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.msg-container {
+    align-items: center;
+}
+
+.msg-container p {
+    line-height: 30px;
+    padding-bottom: 20px;
 }

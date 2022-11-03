@@ -11,12 +11,13 @@ class Player {
         this.image = image
         this.width = 70
         this.height = 90
+        this.jumping = false
     }
     
     draw(){
         c.drawImage(this.image, this.position.x, this.position.y, this.width, this.height)
     }
-
+    
     update() {
         this.draw()
         this.position.x += this.velocity.x
