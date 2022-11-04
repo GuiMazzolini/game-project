@@ -16,6 +16,10 @@ function closeBtn() {
     openPopup.classList.remove("change-popup")
     document.location.reload()
 }
+let song = document.getElementById("first-song")
+let songTwo = document.getElementById("second-song")
+let songThree = document.getElementById("third-song")
+
 
 const gravity = 0.5
 let player = new Player()
@@ -32,6 +36,7 @@ const keys = {
         pressed: false
     }
 }
+
 function game() {
 
 let timeoutHandle;
@@ -63,9 +68,8 @@ countdown(2, 00)
 let lives = document.querySelector(".lives")
 let countLives = 3
 
-
 function init() {
-
+     
     finishLine = 0
 
     let platformImage = new Image()
@@ -97,10 +101,16 @@ function init() {
                         new BackgroundImage(3072, 0, backImage)]
 
     diplomas = [new Diploma(4400, 400, diplomaImage)] 
+    
+    songTwo.pause()
+    songThree.pause()
+    song.play()
 }
 
 function initCss() {
-    
+
+   
+  
     finishLine = 4050
     let platformImage = new Image()
     platformImage.src = "./img/platform2.png"
@@ -134,6 +144,9 @@ function initCss() {
                         new BackgroundImage(3072, 0, backImage)]
                 
     diplomas = [new Diploma(4350, 400, diplomaImage)] 
+
+    song.pause()
+    songTwo.play()
 }
 
 function initJs() {
@@ -176,6 +189,9 @@ function initJs() {
                         new BackgroundImage(3072, 0, backImage)]
 
     diplomas = [new Diploma(4400, 400, diplomaImage)] 
+
+    songTwo.pause()
+    songThree.play()
 }
 
 function animate() {
